@@ -2,7 +2,7 @@
 
 __author__ = "Yiting Li"
 __email__ = "yl2919@columbia.edu"
-__description__ = "Send email to a list of people by parsing the csv file"
+__description__ = "Send email to a group of people by parsing the csv file"
 
 import csv
 import sys
@@ -25,7 +25,7 @@ CONTENT_PREFIX = "S1004 homework grade report:\n"
 CONTENT_POSTFIX = "\nRegards,\nYiting"
 
 
-class ListMail():
+class GroupMail():
 
     title = []
     credit = []
@@ -96,10 +96,10 @@ class ListMail():
 
 
 def main():
-    usage = "usage: listmail.py file [options]"
+    usage = "usage: groupmail.py file [options]"
     parser = OptionParser(usage=usage)
     parser.add_option("-s", "--send", action="store_true", default=False,
-                      help="send email to list, if not set, just print e-mail content")
+                      help="send email, if not set, just print e-mail content")
     parser.add_option("-n", "--no-confirm", action="store_true", default=False,
                       help="no ask for comfirmation of the content of each e-mail before send")
     (options, args) = parser.parse_args()
@@ -107,7 +107,7 @@ def main():
     if not args:
         parser.print_help()
         sys.exit(1)
-    obj = ListMail(send=options.send, no_confirm=options.no_confirm)
+    obj = GroupMail(send=options.send, no_confirm=options.no_confirm)
     obj.execute(args[0])
 
 
