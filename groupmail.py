@@ -25,7 +25,7 @@ CONTENT_PREFIX = "S1004 homework grade report:\n"
 CONTENT_POSTFIX = "\nRegards,\nYiting"
 
 
-class GroupMail():
+class GroupMail(object):
 
     title = []
     credit = []
