@@ -1,0 +1,24 @@
+title,Problem 1,,,,,Problem 2,,,,,Late Penalty,Total score,,
+title,Compiles,Runs,Style,Design,Feedback,Compiles,Runs,Style,Design,Feedback,,Written,Programming,Total
+credit,7.5,7.5,7.5,7.5,,5,5,5,5,,,,,
+jl1331,7.5,7.5,7.5,7.5,,5,5,5,5,,0%,45.5,50,95.5
+jk1234,7.5,7.5,7.5,7.5,,5,5,5,3,Using Math.sqrt to test the result,0%,47.5,48,95.5
+kk1111,7.5,7.5,7.5,6,"inefficiency, unnecessarily using function step3() repeatedly",5,5,5,5,,0%,44.5,48.5,93
+da3636,7.5,7.5,7.5,7.5,,5,5,5,4,has unnecessary gueses,0%,49,49,98
+daniel,0,0,0,0,Not submitted,0,0,0,0,not submitted,0%,0,0,0
+ma2623,7.5,6,7.5,7.5,incorrect output,5,5,5,3,Using Math.sqrt to test the result,0%,48.4,46.5,94.9
+dgk2132,7.5,5.5,7,7,"Didn't printout the corret checking number;bad program name;using divide by 100 many times to get the right number,inefficient",5,5,5,3,Using Math.sqrt to test the result,0%,48,45,93
+danal,0,0,0,0,Not submitted,0,0,0,0,not submitted,0%,0,0,0
+dae2566,7.5,7.5,7.5,7.5,,5,5,5,5,,0%,45,50,95
+koa2105,7.5,7.5,7.5,7.5,,5,5,5,5,,0%,47,50,97
+jj2332,0,0,7.5,6,cannot compile;didn't count the correct check number,0,0,4,4,cannot compile; not finished; bad format,0%,44,21.5,65.5
+noa2103,7.5,4,7.5,7.5,"inccorret output, wrong check number",5,5,5,5,,0%,49,46.5,95.5
+du2185,7.5,6,7.5,7.5,wrong checking num,5,5,5,5,,0%,48.5,48.5,97
+sed2119,0,0,0,0,Not submitted,0,0,0,0,not submitted,0%,48,0,48
+ls2126,7.5,7.5,7.5,7.5,,5,5,5,5,,0%,48,50,98
+cd3292,7.5,7.5,7.5,7.5,,5,5,5,3,Using Math.sqrt to test the result,0%,48,48,96
+ps2179,7,5,7.5,7.5,no output,5,5,5,5,,0%,42,47,89
+mv3129,7.5,5.5,7,7.5,bad format;didn't count the correct check number,5,1,5,3,cannot accept input; wrong output; wrong algorithm,0%,0,41.5,41.5
+po2564,7.5,5.5,7.5,7.5,didn't count the correct check number,5,5,5,5,,0%,50,48,98
+tc2112,7.5,2,7.5,7.5,totally wrong output; didn't compute the correct checking number,0,0,0,0,didn't submit,0%,36.5,24.5,61
+kd2115,7.5,7.5,7.5,7.5,,5,5,5,5,,0%,49,50,99

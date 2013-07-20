@@ -20,9 +20,16 @@ FROM_EMAIL = "***"
 FROM_PASSWORD = "***"
 TO_DOMAIN = "@columbia.edu"
 CC_EMAIL = "***"
+
 SUBJECT = "[S1004] Homework Grade Report"
-CONTENT_PREFIX = "S1004 homework grade report:\n"
-CONTENT_POSTFIX = "\nRegards,\nYiting"
+CONTENT_PREFIX = """
+S1004 homework grade report:
+"""
+CONTENT_POSTFIX = """
+Regards,
+Yiting
+
+"""
 
 
 class GroupMail(object):
@@ -39,9 +46,10 @@ class GroupMail(object):
     def __init__(self, *args, **kwargs):
         self.send = kwargs.get('send', False)
         self.no_confirm = kwargs.get('no_confirm', False)
-        self.server = smtplib.SMTP(SMTP_SERVER)
-        self.server.starttls()
-        self.server.login(FROM_EMAIL, FROM_PASSWORD)
+        if self.send:
+            self.server = smtplib.SMTP(SMTP_SERVER)
+            self.server.starttls()
+            self.server.login(FROM_EMAIL, FROM_PASSWORD)
 
     def execute(self, filename):
         with open(filename, 'rb') as csvfile:
@@ -54,7 +62,7 @@ class GroupMail(object):
         print self.report
 
     def render_line(self, line):
-        content = "Hi, " + line[0] + ":\n\n" + CONTENT_PREFIX
+        content = "Hi, " + line[0] + ":\n" + CONTENT_PREFIX
         target = line[0] + TO_DOMAIN
         for i in range(1, len(line)):
             for t in range(len(self.title)):
@@ -70,7 +78,7 @@ class GroupMail(object):
             for c in range(len(self.credit)):
                 if self.credit[c][i]:
                     content += '/' + self.credit[c][i]
-            content += '\n'
+                content += '\n'
         content += CONTENT_POSTFIX
         if self.send is True:
             self.send_mail(target=target, content=content)
