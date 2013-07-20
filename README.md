@@ -1,13 +1,13 @@
 # GroupMail Script
 ## Description
-Script used to send grading emails to a group of students.
-Wrote this script to ease my job of being a teaching assistant.
-It works by parsing a csv file of grading report then send emails based on the UNI in the first column of the csv file.
+Script used to send grading emails to a group of students.  
+Wrote this script to ease my job of being a teaching assistant.  
+It works by parsing a csv file of grading report then send emails based on the UNI in the first column of the csv file.  
 ## Example
-score.xls is a example grade report excel.
-The title row must start with "title" and the total score row must start with "credit".
-Save the xls as a csv file with the Field Delimiter and Quote Char specified in the script (This is supported by most excel tools).
-Help of the command:
+score.xls is a example grade report excel.  
+The title row must start with "title" and the total score row must start with "credit".  
+Save the xls as a csv file with the Field Delimiter and Quote Char specified in the script (This is supported by most excel tools).  
+Help of the command:  
 ```
 age: groupmail.py file [options]
 
@@ -17,11 +17,11 @@ Options:
   -n, --no-confirm  no ask for comfirmation of the content of each e-mail
                     before send
 ```
-Run the script using the following command:
+Run the script using the following command:  
 ```
 python groupmail.py <csvfilename> -s
 ```
-Sample email output:
+Sample email output:  
 ```
 Hi, mv3129:
 
