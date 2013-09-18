@@ -21,11 +21,11 @@ Run the script using the following command:
 ```
 python groupmail.py <csvfilename> -s
 ```
-Sample email output:  
+Sample email output (All student IDs in the git repo records are not real):
 ```
-Hi, mv3129:
+Hi, aa1234:
 
-S1004 homework grade report:
+S6666 homework grade report:
 
 Problem 1
 Compiles: 7.5/7.5
