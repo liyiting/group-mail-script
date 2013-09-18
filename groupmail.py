@@ -21,9 +21,9 @@ FROM_PASSWORD = "***"
 TO_DOMAIN = "@columbia.edu"
 CC_EMAIL = "***"
 
-SUBJECT = "[S1004] Homework Grade Report"
+SUBJECT = "[S6666] Homework Grade Report"
 CONTENT_PREFIX = """
-S1004 homework grade report:
+S6666 homework grade report:
 """
 CONTENT_POSTFIX = """
 Regards,
